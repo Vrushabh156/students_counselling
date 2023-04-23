@@ -10,8 +10,14 @@ class Counselling extends StatefulWidget {
 class _CounsellingState extends State<Counselling> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-
+    return Center(
+      child: Container(
+        padding: EdgeInsets.only(top: 20),
+        child: const Text(
+          '------- OR -------',
+          style: TextStyle(fontSize: 13, color: Colors.black),
+        ),
+      ),
     );
   }
 }

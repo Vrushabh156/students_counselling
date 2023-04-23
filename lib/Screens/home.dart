@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 
-import 'counselling.dart';
+// import 'counselling.dart';
 
 class homePage extends StatefulWidget {
   // const hompage({ super.key });
 
   @override
   State<homePage> createState() => _HomePage();
+
 }
 
 class _HomePage extends State<homePage> {
 
-  List pages = [
-     _HomePage(),
-     Counselling(),
-    // Profile()
-  ];
+  // List pages = [
+  //    _HomePage(),
+  //    // Counselling(),
+  //   // Profile()
+  // ];
 
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
@@ -40,6 +41,7 @@ class _HomePage extends State<homePage> {
       _selectedIndex = index;
     });
   }
+
 
   @override
   Widget build(BuildContext context) {
