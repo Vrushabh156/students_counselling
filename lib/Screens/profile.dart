@@ -14,7 +14,7 @@ class _ProfilePageState extends State<ProfilePage1> {
       child: Container(
         padding: EdgeInsets.only(top: 20),
         child: const Text(
-          '------- OR1 -------',
+          '------- Profile -------',
           style: TextStyle(fontSize: 13, color: Colors.black),
         ),
       ),

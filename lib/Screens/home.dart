@@ -11,16 +11,10 @@ class homePage extends StatefulWidget {
 
   @override
   State<homePage> createState() => _HomePage();
-
 }
 
 class _HomePage extends State<homePage> {
-
-  List pages = [
-    HomePage1(),
-    ProfilePage1(),
-    Counselling1()
-  ];
+  List pages = [HomePage1(), Counselling(), ProfilePage1()];
 
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
@@ -31,11 +25,11 @@ class _HomePage extends State<homePage> {
       style: optionStyle,
     ),
     Text(
-      'Index 1: Business',
+      'Index 1: Counselling',
       style: optionStyle,
     ),
     Text(
-      'Index 2: School',
+      'Index 2: Profile',
       style: optionStyle,
     ),
   ];
@@ -46,15 +40,11 @@ class _HomePage extends State<homePage> {
     });
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       backgroundColor: Color(0xFFEEEEEE),
       body: pages[_selectedIndex],
-
-
       bottomNavigationBar: BottomNavigationBar(
         // selectedI
         // unselectedItemColor: Colors.black54,
@@ -70,25 +60,20 @@ class _HomePage extends State<homePage> {
         elevation: 0,
 
         items: const <BottomNavigationBarItem>[
-
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
           ),
-
           BottomNavigationBarItem(
             icon: Icon(Icons.laptop),
             label: 'Counselling',
           ),
-
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Profile',
           ),
         ],
-
       ),
     );
   }
-
 }
