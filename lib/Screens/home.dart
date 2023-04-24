@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:students_counselling/Screens/profile.dart';
+
+import 'HomePage1.dart';
+import 'counselling.dart';
 
 // import 'counselling.dart';
 
@@ -12,11 +16,11 @@ class homePage extends StatefulWidget {
 
 class _HomePage extends State<homePage> {
 
-  // List pages = [
-  //    _HomePage(),
-  //    // Counselling(),
-  //   // Profile()
-  // ];
+  List pages = [
+    HomePage1(),
+    ProfilePage1(),
+    Counselling1()
+  ];
 
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
@@ -46,17 +50,25 @@ class _HomePage extends State<homePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Color(0xFFEEEEEE),
-      body: Center(
-        child: Container(
-        child: Column(
-          children: [
-            _HTxt(),
-          ],
-        ),
-        ),
-      ),
+      body: pages[_selectedIndex],
+
+
       bottomNavigationBar: BottomNavigationBar(
+        // selectedI
+        // unselectedItemColor: Colors.black54,
+        // unselectedFontSize: 0,
+        // selectedFontSize: 0,
+        // backgroundColor: Colors.white,
+        type: BottomNavigationBarType.fixed,
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.blue,
+        onTap: _onItemTapped,
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
+        elevation: 0,
+
         items: const <BottomNavigationBarItem>[
 
           BottomNavigationBarItem(
@@ -75,21 +87,8 @@ class _HomePage extends State<homePage> {
           ),
         ],
 
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue,
-        onTap: _onItemTapped,
       ),
     );
   }
 
-  Widget _HTxt(){
-    return Container(
-        padding: EdgeInsets.only(top: 80 ,right: 250, left: 0),
-        child: const Text(
-          'Hi Welcome',
-          style: TextStyle(
-              fontSize: 19, fontWeight: FontWeight.w700, color: Colors.black),
-        ),
-      );
-  }
 }

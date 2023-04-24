@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Counselling extends StatefulWidget {
-  const Counselling({Key? key}) : super(key: key);
+class Counselling1 extends StatefulWidget {
+  // const Counselling({Key? key}) : super(key: key);
 
   @override
-  State<Counselling> createState() => _CounsellingState();
+  State<Counselling1> createState() => _CounsellingState();
 }
 
-class _CounsellingState extends State<Counselling> {
+class _CounsellingState extends State<Counselling1> {
   @override
   Widget build(BuildContext context) {
     return Center(
