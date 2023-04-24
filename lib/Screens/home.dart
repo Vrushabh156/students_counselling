@@ -65,13 +65,13 @@ class _HomePage extends State<homePage> {
           ),
 
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
+            icon: Icon(Icons.laptop),
+            label: 'Counselling',
           ),
 
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            label: 'School',
+            label: 'Profile',
           ),
         ],
 
