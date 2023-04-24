@@ -204,12 +204,22 @@ Widget _bTxt() {
             color: Colors.white,
             shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-            child: const Text(
-              "SIGN IN WITH GOOGLE",
-              style: TextStyle(
-                fontWeight: FontWeight.w800,
-                fontSize: 16,
-              ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  height: 25,
+                  width: 25,
+                  child: Image.asset("assets/images/search.png"),
+                ),
+                const SizedBox(
+                  width: 15,
+                ),
+                const Text(
+                  "SIGN IN WITH GOOGLE",
+                  style: TextStyle(fontWeight: FontWeight.w800, fontSize: 16),
+                ),
+              ],
             ),
           ),
         ),

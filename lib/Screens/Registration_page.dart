@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'login.dart';
 
- class RegisterPage extends StatefulWidget {
-
-   @override
-   State<RegisterPage> createState() => _SplshScreenState();
- }
+class RegisterPage extends StatefulWidget {
+  @override
+  State<RegisterPage> createState() => _SplshScreenState();
+}
 
 class _SplshScreenState extends State<RegisterPage> {
   Color _color1 = Color(0xFF50C2C9);
@@ -39,7 +38,6 @@ class _SplshScreenState extends State<RegisterPage> {
       ),
     );
   }
-
 
   Widget _bText() {
     return Center(
@@ -192,13 +190,15 @@ class _SplshScreenState extends State<RegisterPage> {
             minWidth: double.infinity,
             height: 60,
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(
-                builder: (context) => LoginPage(),
-              ));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LoginPage(),
+                  ));
             },
             color: _color1,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(0)),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(0)),
             child: const Text(
               "Register",
               style: TextStyle(
@@ -238,14 +238,24 @@ class _SplshScreenState extends State<RegisterPage> {
             height: 60,
             onPressed: () {},
             color: Colors.white,
-            shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-            child: const Text(
-              "SIGN UP WITH GOOGLE",
-              style: TextStyle(
-                fontWeight: FontWeight.w800,
-                fontSize: 16,
-              ),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(100)),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  height: 25,
+                  width: 25,
+                  child: Image.asset("assets/images/search.png"),
+                ),
+                const SizedBox(
+                  width: 15,
+                ),
+                const Text(
+                  "SIGN UP WITH GOOGLE",
+                  style: TextStyle(fontWeight: FontWeight.w800, fontSize: 16),
+                ),
+              ],
             ),
           ),
         ),
@@ -266,5 +276,4 @@ class _SplshScreenState extends State<RegisterPage> {
       ),
     );
   }
-
 }
