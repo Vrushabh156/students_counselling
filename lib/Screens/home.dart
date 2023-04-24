@@ -70,7 +70,7 @@ class _HomePage extends State<homePage> {
           ),
 
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
+            icon: Icon(Icons.person),
             label: 'School',
           ),
         ],
