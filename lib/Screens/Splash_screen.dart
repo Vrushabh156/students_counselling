@@ -40,12 +40,14 @@ class _SplashScreenState extends State<SplashScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
                 Padding(padding: EdgeInsets.fromLTRB(0, 100, 0, 0)),
-                Text(
-                  "Students Counselling App",
-                  style: TextStyle(
-                    fontSize: 27,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
+                Center(
+                  child: Text(
+                    "Students Admission\n\t\t\tCounselling App",
+                    style: TextStyle(
+                      fontSize: 27,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 )
               ],

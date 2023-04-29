@@ -6,7 +6,6 @@ void main() {
 }
 
 class HomePage1 extends StatefulWidget {
-
   @override
   State<HomePage1> createState() => _HomePage111State();
 }
@@ -62,8 +61,6 @@ class _HomePage111State extends State<HomePage1> {
             autoPlayAnimationDuration: const Duration(milliseconds: 800),
           ),
         ),
-
-
         CarouselSlider(
           items: [
             Container(
@@ -108,7 +105,6 @@ class _HomePage111State extends State<HomePage1> {
             // autoPlayAnimationDuration: const Duration(milliseconds: 800),
           ),
         ),
-
         CarouselSlider(
           items: [
             Container(
@@ -158,14 +154,13 @@ class _HomePage111State extends State<HomePage1> {
   }
 }
 
-  Widget _HTxt() {
-    return Container(
-      padding: EdgeInsets.only(top: 10, bottom: 5, right: 250, left: 8.0),
-      child: const Text(
-        'Hi Welcome',
-        style: TextStyle(
-            fontSize: 19, fontWeight: FontWeight.w700, color: Colors.black),
-      ),
-    );
-  }
-
+Widget _HTxt() {
+  return Container(
+    padding: EdgeInsets.only(top: 10, bottom: 5, right: 250, left: 8.0),
+    child: const Text(
+      'Hi Welcome',
+      style: TextStyle(
+          fontSize: 19, fontWeight: FontWeight.w700, color: Colors.black),
+    ),
+  );
+}

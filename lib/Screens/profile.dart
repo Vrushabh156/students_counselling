@@ -8,6 +8,8 @@ class ProfilePage1 extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage1> {
+  Color _color1 = Color(0xFF50C2C9);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,6 +17,7 @@ class _ProfilePageState extends State<ProfilePage1> {
       body: ListView(
         children: <Widget>[
           Container(
+            // color: _color1,
             color: Colors.blue,
             height: MediaQuery.of(context).size.height * 0.3,
             width: double.infinity,
@@ -26,8 +29,8 @@ class _ProfilePageState extends State<ProfilePage1> {
                     children: const [
                       CircleAvatar(
                         radius: 50,
-                        // backgroundColor: Colors.white,
-                        // backgroundImage: ,
+                        backgroundImage:
+                            AssetImage('assets/images/profile.png'),
                       ),
                       Positioned(
                           bottom: 5,
@@ -42,12 +45,15 @@ class _ProfilePageState extends State<ProfilePage1> {
                   const SizedBox(
                     height: 10,
                   ),
-                  const Text(
-                    "Welcome Amit",
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.white),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 10),
+                    child: Text(
+                      "Welcome friend",
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white),
+                    ),
                   ),
                   const SizedBox(
                     height: 5,
@@ -55,7 +61,93 @@ class _ProfilePageState extends State<ProfilePage1> {
                 ],
               ),
             ),
-          )
+          ),
+          SingleChildScrollView(
+            child: Column(
+              children: const [
+                ListTile(
+                  leading: Icon(
+                    Icons.home,
+                    size: 28,
+                  ),
+                  title: Text(
+                    "Home",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+                ListTile(
+                  leading: Icon(
+                    Icons.computer,
+                    size: 28,
+                  ),
+                  title: Text(
+                    "Counselling",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+                ListTile(
+                  leading: Icon(
+                    Icons.edit,
+                    size: 28,
+                  ),
+                  title: Text(
+                    "Edit Profile",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+                ListTile(
+                  leading: Icon(
+                    Icons.help,
+                    size: 28,
+                  ),
+                  title: Text(
+                    "Help",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+                ListTile(
+                  leading: Icon(
+                    Icons.share,
+                    size: 28,
+                  ),
+                  title: Text(
+                    "Share",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+                ListTile(
+                  leading: Icon(
+                    Icons.settings,
+                    size: 28,
+                  ),
+                  title: Text(
+                    "Settings",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+                ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    size: 28,
+                  ),
+                  title: Text(
+                    "Contact us",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+                ListTile(
+                  leading: Icon(
+                    Icons.logout,
+                    size: 28,
+                  ),
+                  title: Text(
+                    "Logout",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
