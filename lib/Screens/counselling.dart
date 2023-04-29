@@ -15,7 +15,7 @@ class _Counselling extends State<Counselling> {
       //   backgroundColor: Colors.red,
       //   title: Text("Counselling"),
       // ),
-      backgroundColor: const Color(0xFFEEEEEE),
+      backgroundColor: Color(0xFFEEEEEE),
       body: Container(
         child: Padding(
           padding: const EdgeInsets.only(top: 150, right: 10, left: 10),

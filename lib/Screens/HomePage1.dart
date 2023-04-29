@@ -20,30 +20,30 @@ class _HomePage111State extends State<HomePage1> {
         CarouselSlider(
           items: [
             Container(
-              margin: EdgeInsets.all(8.0),
+              margin: const EdgeInsets.all(8.0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: AssetImage("assets/images/Img1.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
             ),
             Container(
-              margin: EdgeInsets.all(8.0),
+              margin: const EdgeInsets.all(8.0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: AssetImage("assets/images/Img2.jpeg"),
                   fit: BoxFit.cover,
                 ),
               ),
             ),
             Container(
-              margin: EdgeInsets.all(8.0),
+              margin: const EdgeInsets.all(8.0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: AssetImage("assets/images/Img3.jpeg"),
                   fit: BoxFit.cover,
                 ),
@@ -58,7 +58,7 @@ class _HomePage111State extends State<HomePage1> {
             viewportFraction: 1,
             autoPlayCurve: Curves.fastOutSlowIn,
             enableInfiniteScroll: true,
-            autoPlayAnimationDuration: Duration(milliseconds: 800),
+            autoPlayAnimationDuration: const Duration(milliseconds: 800),
           ),
         ),
       ]),
