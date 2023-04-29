@@ -11,6 +11,7 @@ class _ProfilePageState extends State<ProfilePage1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFEEEEEE),
       body: ListView(
         children: <Widget>[
           Container(

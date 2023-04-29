@@ -98,7 +98,7 @@ class _Counselling extends State<Counselling> {
                     const Padding(
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
-                        "management",
+                        "Management",
                         style: TextStyle(
                           color: Colors.red,
                           fontWeight: FontWeight.w800,
