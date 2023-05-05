@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:students_counselling/Screens/EngineeringPage.dart';
+import 'package:students_counselling/Screens/Managementpage.java.dart';
+import 'package:students_counselling/Screens/MedicalPage.dart';
+import 'package:students_counselling/Screens/Otherpage.dart';
+
 
 class Counselling extends StatefulWidget {
   const Counselling({Key? key}) : super(key: key);
@@ -23,117 +28,137 @@ class _Counselling extends State<Counselling> {
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
             children: [
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.white,
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(
-                      "assets/images/engineer.png",
-                      width: 60,
-                      height: 60,
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.only(top: 15),
-                      child: Text(
-                        "Engineering",
-                        style: TextStyle(
-                          color: Colors.red,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 25,
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>EngineeringPage()));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.white,
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        "assets/images/engineer.png",
+                        width: 60,
+                        height: 60,
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.only(top: 15),
+                        child: Text(
+                          "Engineering",
+                          style: TextStyle(
+                            color: Colors.red,
+                            fontWeight: FontWeight.w800,
+                            fontSize: 25,
+                          ),
                         ),
                       ),
-                    ),
-                    // Icon(
-                    //   Icons.home,
-                    //   size: 50,
-                    //   color: Colors.white,
-                    // ),
-                  ],
+                      // Icon(
+                      //   Icons.home,
+                      //   size: 50,
+                      //   color: Colors.white,
+                      // ),
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.white,
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(
-                      "assets/images/medical-team.png",
-                      width: 60,
-                      height: 60,
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.only(top: 15),
-                      child: Text(
-                        "Medical",
-                        style: TextStyle(
-                          color: Colors.red,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 25,
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>MedicalPage()));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.white,
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        "assets/images/medical-team.png",
+                        width: 60,
+                        height: 60,
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.only(top: 15),
+                        child: Text(
+                          "Medical",
+                          style: TextStyle(
+                            color: Colors.red,
+                            fontWeight: FontWeight.w800,
+                            fontSize: 25,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.white,
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(
-                      "assets/images/web-management.png",
-                      width: 60,
-                      height: 60,
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.only(top: 15),
-                      child: Text(
-                        "Management",
-                        style: TextStyle(
-                          color: Colors.red,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 25,
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ManagementPage()));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.white,
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        "assets/images/web-management.png",
+                        width: 60,
+                        height: 60,
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.only(top: 15),
+                        child: Text(
+                          "Management",
+                          style: TextStyle(
+                            color: Colors.red,
+                            fontWeight: FontWeight.w800,
+                            fontSize: 25,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.white,
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(
-                      "assets/images/more.png",
-                      width: 60,
-                      height: 60,
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.only(top: 15),
-                      child: Text(
-                        "Other",
-                        style: TextStyle(
-                          color: Colors.red,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 25,
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>OtherPage()));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.white,
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        "assets/images/more.png",
+                        width: 60,
+                        height: 60,
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.only(top: 15),
+                        child: Text(
+                          "Other",
+                          style: TextStyle(
+                            color: Colors.red,
+                            fontWeight: FontWeight.w800,
+                            fontSize: 25,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],
