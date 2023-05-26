@@ -1,16 +1,30 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import 'home.dart';
 
 class LoginPage extends StatefulWidget {
+  const LoginPage({Key? key}): super(key: key);
 
   @override
   State<LoginPage> createState() => _LoginState();
 }
 
 class _LoginState extends State<LoginPage> {
+  // form key
+  final _formKey = GlobalKey<FormState>();
+
+  //editing controller
+  final TextEditingController emailController = new TextEditingController();
+  final TextEditingController passwordController = new TextEditingController();
+
   // Color _color2 = Color(0xFF50C2C9);
   Color _color1 = Color(0xFF50C2C9);
+
+  // firebase
+  final _auth = FirebaseAuth.instance;
+
+
 
 
   @override
@@ -25,10 +39,10 @@ class _LoginState extends State<LoginPage> {
                 _logo(),
                 _logoText(),
                 _image(),
-                _inputField1(),
-                _inputField2(),
+                _inputField1(),   //
+                _inputField2(),   //
                 _fTxt(),
-                _bTxt(),
+                _bTxt(),   //
                 _orText(),
                 _signBTxt(),
                 _txt(),
@@ -87,9 +101,26 @@ Widget _inputField1() {
       margin: EdgeInsets.only(top: 0),
       width: 378,
       height: 50,
-      child: const TextField(
+      child: TextFormField(
+        controller: emailController,
+        keyboardType: TextInputType.emailAddress,
+        validator: (value){
+          if(value!.isEmpty){
+            return ("Please Enter Your Email");
+          }
+        //  reg expression for email validation
+          if(!RegExp("^[a-zA-z0-9+_.-]+@[a-zA-z0-9.-]+.[a-z]").hasMatch(value)){
+            return ("Please Enter the valid Email");
+          }
+          return null;
+        },
+        onSaved: (value){
+          emailController.text = value!;
+        },
+        textInputAction: TextInputAction.done,
+
         // style: GoogleFonts.,
-        decoration: InputDecoration(
+        decoration: const InputDecoration(
           hintText: "Enter your email",
           fillColor: Colors.white,
           filled: true,
@@ -114,9 +145,27 @@ Widget _inputField2() {
       margin: EdgeInsets.only(top: 20),
       width: 378,
       height: 50,
-      child: const TextField(
+      child: TextFormField(
+        autofocus: false,
+        obscureText: true,
+        controller: passwordController,
+
+        validator: (value){
+          RegExp regex = new RegExp(r'^.{6,}$');
+          if(value!.isEmpty){
+            return ("Password is required for login");
+          }
+          if(!regex.hasMatch(value)){
+            return ("Enter your valid password(Min. 6 character)");
+          }
+        },
+        onSaved: (value){
+          passwordController.text = value!;
+        },
+        textInputAction: TextInputAction.done,
+
         // style: GoogleFonts.,
-        decoration: InputDecoration(
+        decoration: const InputDecoration(
           hintText: "Enter password",
           fillColor: Colors.white,
           filled: true,
@@ -138,7 +187,7 @@ Widget _fTxt() {
       padding: EdgeInsets.only(top: 20),
       child: const Text(
         'Forgot Password ?',
-        style: TextStyle(fontSize: 16,color: Color.fromRGBO(47, 154, 160, 1.0)),
+        style: TextStyle(fontSize: 16,color: Color.fromRGBO(0, 60, 255, 1.0)),
       ),
     ),
   );
@@ -156,11 +205,12 @@ Widget _bTxt() {
             minWidth: double.infinity,
             height: 60,
             onPressed: () {
+             // signIn(emailController.text, passwordController.text);
               Navigator.push(context, MaterialPageRoute(
-                builder: (context) => homePage(),
+                      builder: (context) => homePage()
               ));
             },
-            color: _color1,
+            color: Colors.lightBlue,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0)),
             child: const Text(
@@ -200,7 +250,11 @@ Widget _bTxt() {
           child: MaterialButton(
             minWidth: double.infinity,
             height: 60,
-            onPressed: () {},
+            onPressed: () {
+              // Navigator.push(context, MaterialPageRoute(
+              //     builder: (context) => homePage()
+              // ));
+            },
             color: Colors.white,
             shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
@@ -240,5 +294,24 @@ Widget _bTxt() {
       ),
     );
   }
+
+// Login function
+  void signIn(String email, String password) async {
+    if(_formKey.currentState!.validate()){
+     await _auth.signInWithEmailAndPassword(email: email, password: password).then((uid) =>
+     {
+        //Fluttertoast.showToast(msg: "Login Sucessful"),
+       //Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> homePage()
+       Navigator.push(context, MaterialPageRoute(
+        builder: (context) => homePage()
+     ))
+     }).catchError((e){
+        //Fluttertoast.showToast(msg: e!.message);
+     });
+  }
+  }
+
+
+
 }
 

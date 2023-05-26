@@ -8,7 +8,7 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _SplshScreenState extends State<RegisterPage> {
-  Color _color1 = Color(0xFF50C2C9);
+  Color _color1 = Color(0xFF2196f3);
 
   @override
   Widget build(BuildContext context) {
@@ -196,7 +196,7 @@ class _SplshScreenState extends State<RegisterPage> {
                     builder: (context) => LoginPage(),
                   ));
             },
-            color: _color1,
+              color: Colors.lightBlue,
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(0)),
             child: const Text(

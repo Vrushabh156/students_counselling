@@ -12,7 +12,7 @@ class _State extends State<OtherPage> {
   Widget build(BuildContext context) {
    return Scaffold(
      appBar: AppBar(
-       backgroundColor: Colors.red,
+       backgroundColor: Colors.lightBlue,
        title: Text("More"),
      ),
    );

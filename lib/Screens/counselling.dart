@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:students_counselling/Screens/EngineeringPage.dart';
-import 'package:students_counselling/Screens/Managementpage.java.dart';
+import 'package:students_counselling/Screens/Managementpage.dart';
 import 'package:students_counselling/Screens/MedicalPage.dart';
 import 'package:students_counselling/Screens/Otherpage.dart';
 

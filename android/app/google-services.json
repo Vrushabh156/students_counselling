@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "376589313283",
+    "project_id": "students-admission-counselling",
+    "storage_bucket": "students-admission-counselling.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376589313283:android:a641b67dfafddf55dc7536",
+        "android_client_info": {
+          "package_name": "com.example.students_counselling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376589313283-tqtmir51ior6ji4fls1olc59rck0neek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmdWKS99IKG0BhDg8FYwM3X6_k1ZyHCIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376589313283-tqtmir51ior6ji4fls1olc59rck0neek.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "376589313283-ftvpb9dte5amn03vbjopnm3fkbbnaohf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.studentsCounselling"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

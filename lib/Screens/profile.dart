@@ -8,7 +8,7 @@ class ProfilePage1 extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage1> {
-  Color _color1 = Color(0xFF50C2C9);
+  Color _color1 = Color(0xFF2196f3);
 
   @override
   Widget build(BuildContext context) {
@@ -19,10 +19,10 @@ class _ProfilePageState extends State<ProfilePage1> {
           Container(
             // color: _color1,
             color: Colors.blue,
-            height: MediaQuery.of(context).size.height * 0.3,
+            height: MediaQuery.of(context).size.height * 0.28,
             width: double.infinity,
             child: Padding(
-              padding: const EdgeInsets.only(top: 50),
+              padding: const EdgeInsets.only(top: 40),
               child: Column(
                 children: <Widget>[
                   Stack(
@@ -48,7 +48,7 @@ class _ProfilePageState extends State<ProfilePage1> {
                   const Padding(
                     padding: EdgeInsets.only(top: 10),
                     child: Text(
-                      "Welcome friend",
+                      "Welcome Dost",
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w700,
@@ -68,81 +68,81 @@ class _ProfilePageState extends State<ProfilePage1> {
                 ListTile(
                   leading: Icon(
                     Icons.home,
-                    size: 28,
+                    size: 25,
                   ),
                   title: Text(
                     "Home",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 18),
                   ),
                 ),
                 ListTile(
                   leading: Icon(
                     Icons.computer,
-                    size: 28,
+                    size: 25,
                   ),
                   title: Text(
                     "Counselling",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 17),
                   ),
                 ),
                 ListTile(
                   leading: Icon(
                     Icons.edit,
-                    size: 28,
+                    size: 25,
                   ),
                   title: Text(
                     "Edit Profile",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 17),
                   ),
                 ),
                 ListTile(
                   leading: Icon(
                     Icons.help,
-                    size: 28,
+                    size: 25,
                   ),
                   title: Text(
                     "Help",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 17),
                   ),
                 ),
                 ListTile(
                   leading: Icon(
                     Icons.share,
-                    size: 28,
+                    size: 25,
                   ),
                   title: Text(
                     "Share",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 17),
                   ),
                 ),
                 ListTile(
                   leading: Icon(
                     Icons.settings,
-                    size: 28,
+                    size: 25,
                   ),
                   title: Text(
                     "Settings",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 17),
                   ),
                 ),
                 ListTile(
                   leading: Icon(
                     Icons.email,
-                    size: 28,
+                    size: 25,
                   ),
                   title: Text(
                     "Contact us",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 17),
                   ),
                 ),
                 ListTile(
                   leading: Icon(
                     Icons.logout,
-                    size: 28,
+                    size: 25,
                   ),
                   title: Text(
                     "Logout",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 17),
                   ),
                 ),
               ],
