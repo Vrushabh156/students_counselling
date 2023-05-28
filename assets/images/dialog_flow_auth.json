@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "students-counselling-pofj",
+  "private_key_id": "ecd310b041e689d21c3802a29e5a529b66273e41",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDpVy69p5SCc1Lw\nZ7Ghkct3iExbw+EFoO33n29FKfWA6AGkVaMmew2TxuHKyxOHU48Yd0fMpVptPkfm\n4N2Z2QnEEB2pC8UsVO/VdhGdM6KjeKeGrWG2jLavFOaHF8xhye/ARcWcCsvdOyw3\nA5pUZtCR1jDkG+0Tik99krC3Iqqcpab8NzIh2cppTa9fLo5t0AqCvIuyx1GJCLXv\nf3GZ026s/1yenEBeS/n/3pur8qkTRT1pzdOdwIh/rvAMwuzgXrvTRbBYHH4L0K6S\nX7ugM1LsrKoq6lYnkva+Lh5QxuJ4VUm5RVpqonAaHwtpVsQgvKhu/klRajnVmsQQ\nlj9gxGUBAgMBAAECggEAGp8UuRSGb/+iRcU+0dUlZoTJWWrWoGLE44xwEG8CEGvn\nzAztKTW+zc5R8mYK21SgLcVmDqYK1A3X/DJJdgT6BUFlcOTj4PPrzOnEhq/ebVIV\notrjHAWfzgfPaThA3CNC1CfhrLTan2nh2IDzuY9lWk4ak9vPx3vvJ791o98zod1Y\nj5kjC1BaMbP+hdwbvTbWdgVO05qfyIn0ISsxltZtTO7pjvJtzFD6RFALaZCMKav8\n0lk3oBcro+i1x0PW93dvjhqVHTtWrxxhpUHGtlOOhNS3c0tvn+u8mD5MHf/REQdv\n72gwADkSGbBFxdC0Fc/P0riXMkoW+Q5AUrUekZezZQKBgQD6gyU4YT5ypp3ggkH1\nHpbQZb+0s84NsOrJkPFPujaGtwfq7n+35j4b1hVif4Pa4PRpPdp17+T+qzBhKtFl\nJZZR+knbboJjEnBjaIk2QciQ9ZdD3OcbexUltNwDFwku68H/V9WaouWnvo62gKYs\nD4/Lq/acETTzJypNyykYJZj/IwKBgQDuc71IPtR4HSNSCPejKLhL7Ajlnmf6gAfZ\n15xiPY/1k0jP0F1JV5qaBN3PWzQqHnPNsGrbzXdvSumqlQ6ouZIcWQfF/a8y9bXd\nELoR6eUP8mKHaa5a6gFgdiJDV7xuqrjZ6bwweo/RD/yuIYsbQDAgo2Ett5Zd9V+a\nkLOJrRr/iwKBgCMe58TzvTGNsmybVmvrEfG9khbfbm/08bW4oFwxGxvf5ThGn5lE\nqkh0xyK8BdxV1W47wbjvHQenMG0u95RapKxxjpE4+Qayuxb0vOfiaSAJjl9xROVR\naDGVHZNBU4REgTovMj8vv0q5KIDloGZk+B/xx+0xbF76iq/FX8mG2+BJAoGBAOHp\n/9wRwuUl3g/b9Rq8+pbbwrYhtSuM32NRtpUQ9HJbH3HcXHWfLRddIvVQ2IRLI7Yt\nvaAP82ca13VJEYFjh32aEBZSOgoS50HRlihgrCfGofjfdFQoPjOw2NdqqVlEICw9\nGZHonJcbCW/E0fF4h+B0Sh6xQCI21mQvUhpPSjPvAoGAYuvhNEyAHdY7iF+fUjqQ\nkaNuqOfbVZn8pemuRZdOdRdHLhC/x5TxjVnVWmYiXV/S15kwc7KDn8ZOcF2G1Yof\nHuK8+fXCUhaQlDaeM3gWQKoIOYBkHtwoq499I4T1ZOBdFDgfyrPVtuXRljFrVW2T\nC4wEY3apNm4DSl0TLrUgcKk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "bot-529@students-counselling-pofj.iam.gserviceaccount.com",
+  "client_id": "112905158444372256026",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bot-529%40students-counselling-pofj.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

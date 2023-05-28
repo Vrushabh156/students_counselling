@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:students_counselling/Screens/help.dart';
+
+// import 'help.dart';
 
 class ProfilePage1 extends StatefulWidget {
   const ProfilePage1({Key? key}) : super(key: key);
@@ -64,7 +67,7 @@ class _ProfilePageState extends State<ProfilePage1> {
           ),
           SingleChildScrollView(
             child: Column(
-              children: const [
+              children: [
                 ListTile(
                   leading: Icon(
                     Icons.home,
@@ -104,6 +107,14 @@ class _ProfilePageState extends State<ProfilePage1> {
                     "Help",
                     style: TextStyle(fontSize: 17),
                   ),
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Help(),
+                      ),
+                    );
+                  },
                 ),
                 ListTile(
                   leading: Icon(
