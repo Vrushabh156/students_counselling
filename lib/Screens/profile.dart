@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:students_counselling/Screens/help.dart';
+import 'package:students_counselling/Screens/home.dart';
+import 'package:students_counselling/Screens/setting.dart';
+
+import 'HomePage1.dart';
+import 'contactUs.dart';
+import 'counselling.dart';
+import 'editProfile.dart';
 
 // import 'help.dart';
 
@@ -69,24 +76,40 @@ class _ProfilePageState extends State<ProfilePage1> {
             child: Column(
               children: [
                 ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.home,
                     size: 25,
                   ),
-                  title: Text(
+                  title: const Text(
                     "Home",
                     style: TextStyle(fontSize: 18),
                   ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HomePage1(),
+                      ),
+                    );
+                  },
                 ),
                 ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.computer,
                     size: 25,
                   ),
-                  title: Text(
+                  title: const Text(
                     "Counselling",
                     style: TextStyle(fontSize: 17),
                   ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Counselling(),
+                      ),
+                    );
+                  },
                 ),
                 ListTile(
                   leading: Icon(
@@ -97,6 +120,14 @@ class _ProfilePageState extends State<ProfilePage1> {
                     "Edit Profile",
                     style: TextStyle(fontSize: 17),
                   ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => EditProfilePage(),
+                      ),
+                    );
+                  },
                 ),
                 ListTile(
                   leading: Icon(
@@ -107,7 +138,7 @@ class _ProfilePageState extends State<ProfilePage1> {
                     "Help",
                     style: TextStyle(fontSize: 17),
                   ),
-                  onTap: (){
+                  onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -127,24 +158,40 @@ class _ProfilePageState extends State<ProfilePage1> {
                   ),
                 ),
                 ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.settings,
                     size: 25,
                   ),
-                  title: Text(
+                  title: const Text(
                     "Settings",
                     style: TextStyle(fontSize: 17),
                   ),
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SettingsPage(),
+                      ),
+                    );
+                  },
                 ),
                 ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.email,
                     size: 25,
                   ),
-                  title: Text(
+                  title: const Text(
                     "Contact us",
                     style: TextStyle(fontSize: 17),
                   ),
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ContactUsPage(),
+                      ),
+                    );
+                  },
                 ),
                 ListTile(
                   leading: Icon(
