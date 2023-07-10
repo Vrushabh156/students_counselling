@@ -1,16 +1,8 @@
-# students_counselling
+The Student Admission Counselling Application is designed to help students for finding the right institution and program that best fits their academic goals and career aspirations. It provides personalized recommendations to students based on their interests, academic background, and career goals. Additionally, the application simplifies the application process by allowing students to fill out a single application form that can be sent to multiple institutions.
 
-A new Flutter project.
+Objectives  & Scope of Project:
+1. To provide comprehensive information to students about different educational institutions and their admission requirements.
+2. To provide personalized recommendations of college lists to students based on their percentile score, interests, academic background, and career goals.
+3. To provide the accuracy and efficiency of the admissions process, reduce paperwork, and eliminate the need for physical visits to different institutions.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
